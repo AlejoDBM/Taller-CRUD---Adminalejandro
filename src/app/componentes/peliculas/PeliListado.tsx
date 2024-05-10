@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { Pelicula } from "../../modelos/peliculas";
-import { ARREGLO_PELICULAS } from "../../mocks/Pelicula-mocks";
+import { ARREGLO_PELICULASS } from "../../mocks/Pelicula-mocks";
 import { ARREGLO_PELICULA_GENERO } from "../../utilidades/dominios/DomGenero";
 
 export const PeliListado = () => {
-  const [arrPeliculas] = useState<Pelicula[]>(ARREGLO_PELICULAS);
+  const [arrPeliculas] = useState<Pelicula[]>(ARREGLO_PELICULASS);
 
   const obtenerNombreGenero = (valor: string) => {
     for (const obGen of ARREGLO_PELICULA_GENERO) {
